@@ -154,11 +154,21 @@ html {
   background: #23292c; }
 
 h1,
-h2 {
+h2,
+p {
   margin: 0; }
 
+ul {
+  padding: 0; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fffaeb;
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s; }
+  a:hover {
+    color: #e1560e; }
 
 header {
   background: url("../assets/veggie-platter.jpeg") center/cover no-repeat fixed #23292c;
@@ -195,8 +205,14 @@ h1 {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  color: #fffaeb;
+  left: 0; }
+
+.ham-menu {
+  display: none; }
+
+.menu-wrapper {
+  width: 80%;
+  margin: 1rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,29 +220,60 @@ h1 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  color: #fffaeb; }
 
-.main-nav {
-  padding-left: 1rem;
-  list-style: none; }
-  .main-nav a {
-    text-transform: uppercase;
-    color: #fffaeb;
-    letter-spacing: .1rem;
-    line-height: 2rem;
-    position: relative;
-    -webkit-transition-duration: .5s;
-    -o-transition-duration: .5s;
-    transition-duration: .5s; }
-  .main-nav a::before {
+.main-nav,
+.theme-credits,
+.menu-footer {
+  width: 100%; }
+
+.main-nav ul,
+.theme-credits,
+.menu-footer {
+  border-top: 1px solid #eae5d6; }
+
+.main-nav ul,
+.social-media {
+  list-style-type: none; }
+
+.theme-credits,
+.menu-footer {
+  padding: 10px 0; }
+
+.main-nav ul li {
+  padding: 0 0 0 20px; }
+
+.main-nav ul a {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  line-height: 2rem;
+  position: relative; }
+  .main-nav ul a::before {
     content: ">";
     font-size: 1rem;
     position: absolute;
     top: -8px;
     left: -20px; }
-  .main-nav a:hover {
-    color: #e1560e; }
+
+.theme-credits,
+.menu-footer p {
+  font-size: .5rem;
+  text-align: center;
+  line-height: 1rem; }
+
+.theme-credits a {
+  text-decoration: underline; }
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
