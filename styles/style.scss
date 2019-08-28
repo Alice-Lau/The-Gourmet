@@ -1,0 +1,112 @@
+@import 'setup';
+
+$dark-gray: #23292c;
+$light-gray: #3e494f;
+$orange: #e1560e;
+$beige: #eae5d6;
+$off-white: #fffaeb;
+$great-vibe: 'Great Vibes', cursive;
+$open-sans: 'Open Sans', sans-serif;
+$playfair: 'Playfair Display', serif;
+
+html {
+    font-size: 125%;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 3840px;
+    background: $dark-gray;
+}
+
+
+h1,
+h2 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+//***************************************************//
+//=======================header======================//
+//***************************************************//
+header {
+    background: url('../assets/veggie-platter.jpeg') center / cover no-repeat fixed $dark-gray;
+    min-height: 95vh;
+    position: relative;
+}
+
+// hero
+h1 {
+    padding-top: calc(45vh - 180px);
+}
+
+.hero-image {
+    width: 38%;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.view-details {
+    margin-top: 30px;
+    text-align: center;
+
+    button {
+        background: rgba(225, 86, 14, .9);
+        border: none;
+        padding: 15px 40px;
+        font-family: $open-sans;
+        font-size: 1rem;
+        font-weight: bold;
+        color: $beige;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+}
+
+// menu
+.menu {
+    background: rgba(35, 41, 44, .9);
+    width: 15%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    color: $off-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-nav {
+    padding-left: 1rem;
+    list-style: none;
+
+    a {
+        text-transform: uppercase;
+        color: $off-white;
+        letter-spacing: .1rem;
+        line-height: 2rem;
+        position: relative;
+        transition-duration: .5s;
+    }
+
+    a::before {
+        content: ">";
+        font-size: 1rem;
+        position: absolute;
+        top: -8px;
+        left: -20px; 
+    }
+
+    a:hover {
+        color: $orange;
+    }
+}
