@@ -1,13 +1,5 @@
 @import 'setup';
-
-$dark-gray: #23292c;
-$light-gray: #3e494f;
-$orange: #e1560e;
-$beige: #eae5d6;
-$off-white: #fffaeb;
-$great-vibe: 'Great Vibes', cursive;
-$open-sans: 'Open Sans', sans-serif;
-$playfair: 'Playfair Display', serif;
+@import 'about';
 
 html {
     font-size: 125%;
@@ -22,8 +14,17 @@ html {
 
 h1,
 h2,
+h3,
 p {
     margin: 0;
+}
+
+h2 {
+    font-family: $great-vibe;
+    
+    span {
+        color: $orange;
+    }
 }
 
 ul {
@@ -39,7 +40,6 @@ a {
         color: $orange;
     }
 }
-
 //***************************************************//
 //=======================header======================//
 //***************************************************//

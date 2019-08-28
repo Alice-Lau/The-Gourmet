@@ -1,0 +1,49 @@
+.about {
+    background: $beige;
+    min-height: 60vh;
+    color: $dark-gray;
+}
+
+.about,
+.chef-bio,
+.chef-bio-content > div,
+.scroll-arrows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chef-bio,
+.chef-portrait {
+    width: 50%;
+}
+
+.chef-bio {
+    justify-content: flex-end;
+    align-items: center;
+
+    h2 {
+        font-size: 2.8rem;
+    }
+}
+
+.chef-bio-wrapper {
+    width: 70%;
+}
+
+// scroll-arrows
+.scroll-arrows button {
+    background: transparent;
+    border: none;
+    color: $dark-gray;
+    transition-duration: .3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $orange;
+    }
+
+    &:disabled {
+        color: transparent;
+    }
+}

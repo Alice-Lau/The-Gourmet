@@ -116,22 +116,37 @@
         <section id="about" class="about">
             <div class="chef-bio">
                 <div class="chef-bio-wrapper">
-                    <h2>About Our Chefs</h2>
-
-                    <div class="chef-name-tag">
-                        <div class="headshot">
-                            <img src="" alt="">
+                    <h2><span>About</span> Our Chefs</h2>
+                    
+                    <div id="chef-bio-content" class="chef-bio-content">
+                        <div>
+                            <div class="chef-headshot">
+                                <img src="${chefHeadShot}" alt="${chefName}'s headshot">
+                            </div>
+                            <div class="chef-name">
+                                <h3>${$chefName}</h3>
+                                <p>${chefTitle}</p>
+                            </div>
                         </div>
-
-                        <div class="chef-name">
-                            <h3>Gustave Berneir</h3>
-                        </div>
+                    
+                        <p class="chef-message">${chefMessage}</p>
+                        <p>${chefSummary}</p>
                     </div>
-                </div>
-            </div>
+                    
+                    <div class="scroll-arrows">
+                        <div>
+                            <button id="left-arrow" disabled><</button>
+                        </div>
+                        
+                        <div>
+                            <button id="right-arrow">></button>
+                        </div>
+                    </div> <!-- end of scroll-arrows -->
+                </div> <!-- end of chef-bio-wrapper -->
+            </div> <!-- end of chef-bio -->
 
             <div class="chef-portrait">
-                <img src="" alt="">
+                <img src=${chefPortrait} alt="${chefName}'s Portrait">
             </div>
         </section>
     </main>

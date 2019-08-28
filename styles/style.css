@@ -145,6 +145,50 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden; }
 
+.about {
+  background: #eae5d6;
+  min-height: 60vh;
+  color: #23292c; }
+
+.about,
+.chef-bio,
+.chef-bio-content > div,
+.scroll-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.chef-bio,
+.chef-portrait {
+  width: 50%; }
+
+.chef-bio {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .chef-bio h2 {
+    font-size: 2.8rem; }
+
+.chef-bio-wrapper {
+  width: 70%; }
+
+.scroll-arrows button {
+  background: transparent;
+  border: none;
+  color: #23292c;
+  -webkit-transition-duration: .3s;
+  -o-transition-duration: .3s;
+  transition-duration: .3s; }
+  .scroll-arrows button:hover, .scroll-arrows button:focus, .scroll-arrows button:active {
+    color: #e1560e; }
+  .scroll-arrows button:disabled {
+    color: transparent; }
+
 html {
   font-size: 125%; }
 
@@ -155,8 +199,14 @@ html {
 
 h1,
 h2,
+h3,
 p {
   margin: 0; }
+
+h2 {
+  font-family: "Great Vibes", cursive; }
+  h2 span {
+    color: #e1560e; }
 
 ul {
   padding: 0; }
